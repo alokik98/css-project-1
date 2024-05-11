@@ -51,9 +51,9 @@ nav i {
 }
 
 #center h1 {
-    font-size: 80px;
+    font-size: 4.1vw;
     font-weight: 500;
-    line-height: 80px;
+    line-height: 4.4vw;
 }
 
 #center-in {
@@ -65,7 +65,7 @@ nav i {
 }
 
 #center-in p {
-    font-size: 22px;
+    font-size: 1.2vw;
     font-weight: 600;
     line-height: 32px;
 }
@@ -96,8 +96,8 @@ nav i {
 
 }
 
-.elem:hover i{
-   opacity: 1;
+.elem:hover i {
+    opacity: 1;
 }
 
 .elem:hover {
@@ -110,4 +110,75 @@ nav i {
     background: url(https://images.unsplash.com/photo-1715292779491-a32d1f086f5a?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
     background-position: 0 30%;
+}
+
+@media (max-width:600px) {
+    nav {
+        height: 60px;
+        gap: 20px;
+    }
+
+    nav h4,
+    nav i {
+        font-size: 14px;
+    }
+
+    #center {
+        width: 100%;
+        padding: 15px 20px;
+    }
+
+    #center h1 {
+        font-size: 6vw;
+        line-height: 8vw;
+    }
+
+    #center-in {
+        height: 200px;
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    #center-in p {
+        font-size: 3vw;
+        font-weight: 600;
+        line-height: 3.5vw;
+    }
+
+    #right {
+        width: 70%;
+    }
+
+    .elem {
+        padding: 8px 0;
+        border-top: 2px solid #000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .elem i {
+        font-size: 3.5vw;
+        font-weight: 500;
+        opacity: 1;
+    }
+
+    .elem a {
+        color: #000;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 3vw;
+
+    }
+
+    .elem:hover i {
+        opacity: 1;
+    }
+
+    .elem:hover {
+        text-decoration: underline;
+    }
 }
